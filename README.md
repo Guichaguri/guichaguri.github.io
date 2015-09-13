@@ -1,1 +1,1 @@
-# guichaguri.github.io
+The code for a small website created by me (Guichaguri)
