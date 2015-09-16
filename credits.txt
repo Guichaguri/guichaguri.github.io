@@ -10,3 +10,5 @@
 
     Roboto by Christian Robertson
     https://github.com/google/roboto
+
+    The rest of the code by Guilherme Chaguri
