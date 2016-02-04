@@ -1,0 +1,119 @@
+/* This is the css used in my project pages */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic,300,100');
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+#content {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #ffffff;
+    animation: fadeInDown 1.5s;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0.25em 0px;
+    padding: 0px;
+
+    transition: transform 0.75s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.75s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+nav {
+    transition: all 0.65s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.5s;
+}
+nav ul, nav ul li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0.1em 0.3em;
+}
+nav ul li a {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#download {
+    margin: 1em 0px;
+}
+#dl-button, select {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    padding: 0.5em 0.6em;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.35em;
+    box-sizing: border-box;
+    width: 100%;
+}
+select option {
+    color: #333333;
+}
+#dl-button {
+    margin: 7px;
+    width: auto;
+    text-align: center;
+}
+.w50 {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    display: none;
+    padding: 7px;
+    animation: scaleUp 0.5s;
+}
+.w50clear {
+    clear: both;
+    display: none;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -100%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.25);
+        max-height: 0px;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        max-height: 65px;
+    }
+}

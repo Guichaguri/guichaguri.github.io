@@ -1,118 +1,298 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Guichaguri</title>
+    <title>Guilherme Chaguri</title>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//code.jquery.com">
 
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <meta http-equiv="content-language" content="en">
+    <link rel="alternate" href="http://guichaguri.github.io/" hreflang="en" />
+    <link rel="canonical" href="http://guichaguri.github.io/" />
+    <link rel="publisher" href="https://plus.google.com/+GuiChaguri" />
+    <meta name="google-site-verification" content="rV_BZpKiHVJGRCvmTph1XDr6HCDSOjrMwMPw85RfiIY">
 
-    <meta name="robots" content="all">
-    <meta name="googlebot" content="all">
-    <meta name="language" content="portuguese">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
-    <meta name="revisit-after" content="2 weeks">
-    <meta name="keywords" content="guichaguri, guilherme chaguri, minecraft mods, guichaguri mods, betterfps, tickrate changer, tickratechanger, pvptime">
-    <meta name="description" content="Guichaguri: the developer of BetterFps, Tickrate Changer and PvPTime">
-    <meta name="author" content="Guilherme Chaguri">
-    <meta name="subject" content="guichaguri, guilherme chaguri, minecraft mods, guichaguri mods, betterfps, tickrate changer, tickratechanger, pvptime">
-    <meta name="title" content="Guichaguri">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="classification" content="guichaguri,guilherme chaguri,java,php,nodejs" />
+    <meta name="title" content="Guilherme Chaguri" />
+    <meta name="description" content="The developer of DiscordDJ, BetterFps and other projects. Self-taught programmer that works with Java, PHP and NodeJS" />
+    <meta name="keywords" content="Java Developer, PHP Developer, DiscordDJ, BetterFps, Tickrate Changer, Web Developer, Guilherme Chaguri, Guichaguri" />
+    <meta name="subject" content="Java Developer, PHP Developer, DiscordDJ, BetterFps, Tickrate Changer, Web Developer, Guilherme Chaguri, Guichaguri" />
+    <meta name="author" content="Guilherme Chaguri" />
+    <meta name="rating" content="general" />
+    <meta name="Googlebot" content="all" />
+    <meta name="language" content="english" />
+    <meta name="distribution" content="Global" />
+    <meta name="robots" content="all" />
+    <meta name="url" content="http://guichaguri.github.io/" />
+    <meta name="revisit-after" content="2 weeks" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <meta property="og:title" content="Guilherme Chaguri" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://guichaguri.github.io/" />
+    <meta property="og:description" content="The developer of DiscordDJ, BetterFps and other projects. Self-taught programmer that works with Java, PHP and NodeJS" />
+    <meta property="og:site_name" content="Guichaguri" />
 
-    <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
-    <link rel="icon" type="image/png" href="assets/images/icon16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/images/icon32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/images/icon.png" sizes="64x64">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic,300,100');
+        body, html {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            background: url('background.png') fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+        .page-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+            min-height: 100vh;
+        }
+        .page {
+            position: absolute;
+            top: 49%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.25em;
+            font-weight: 400;
+            color: #333333;
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3em;
+            font-weight: 300;
+            color: #3a8dfe;
+            background-image: -webkit-linear-gradient(92deg, #26c2f3, #3a8dfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0.25em 0px;
+            padding: 0px;
+
+            transition: transform 0.75s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.75s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3em;
+            font-weight: 300;
+            color: #333333;
+            margin: 0.25em 0px;
+            padding: 0px;
+
+            transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+        }
+        a {
+            font-weight: 400;
+            color: #888888;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #555555;
+            text-decoration: none;
+        }
+        p {
+            font-weight: 300;
+            transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+        }
+        #projects .page ul {
+            padding-left: 1em;
+            color: #676767;
+        }
+        #projects .page ul li {
+            margin: 0.5em 0px;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+        #projects .page ul li em {
+            color: #888888;
+            font-size: 0.75em;
+            font-style: normal;
+        }
+        #projects .page ul li a {
+            color: #676767;
+            font-weight: 700;
+            display: block;
+        }
+        #projects .page ul li a:hover {
+            color: #26c2f3;
+        }
+        nav {
+            transition: all 0.65s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition-delay: 0.5s;
+        }
+        nav ul, nav ul li {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            padding: 0.1em 0.3em;
+        }
+
+        #main .page {
+            animation: fadeInDown 1.5s;
+        }
+        .back-button {
+            font-weight: 300;
+            float: right;
+            transition: opacity 0.65s ease-in-out;
+            transition-delay: 0.5s;
+        }
+
+        .hide h1 {
+            transform: scale(0.25);
+            opacity: 0;
+        }
+        .hide h3 {
+            transform: translate(0, -50%);
+            opacity: 0;
+        }
+        .hide nav {
+            transform: translate(0, 50%);
+            opacity: 0;
+        }
+        .hide p {
+            opacity: 0;
+            transform: translate(5%, 0);
+        }
+        #projects.hide ul li {
+            transform: translate(50%, 0);
+            opacity: 0;
+        }
+        .hide .back-button {
+            opacity: 0;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -100%);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+    </style>
 </head>
 <body>
-    <header id="top">
-        <div>
-            <a href="./" id="logo">Guichaguri</a>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li id="menu-button">
-                <a href="#" title="Menu">
-                    &#xf0c9;
-                    <span>Menu</span>
-                </a>
-            </li>
-            <li>
-                <a href="#projects" title="Projects">
-                    &#xf085;
-                    <span>Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="#social" title="Social Media">
-                    &#xf097;
-                    <span>Social Media</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
     <div id="content">
-        <h2 id="projects">Projects</h2>
-        <div class="grid">
-            <div class="item">
-                <div class="item-image" style="background-image: url('assets/images/discorddj.png');">
-                    <a href="http://guichaguri.github.io/DiscordDJ/"></a>
-                </div>
-                <div class="item-text">
-                    <a href="http://guichaguri.github.io/DiscordDJ/">DiscordDJ</a>
-                    <div class="desc">Bring music to your Discord server</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image" style="background-image: url('assets/images/betterfps.png');">
-                    <a href="http://minecraft.curseforge.com/mc-mods/229876-betterfps"></a>
-                </div>
-                <div class="item-text">
-                    <a href="http://minecraft.curseforge.com/mc-mods/229876-betterfps">BetterFps</a>
-                    <div class="desc">Performance Improvements</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image" style="background-image: url('assets/images/tickratechanger.png');">
-                    <a href="http://minecraft.curseforge.com/mc-mods/230233-tickratechanger"></a>
-                </div>
-                <div class="item-text">
-                    <a href="http://minecraft.curseforge.com/mc-mods/230233-tickratechanger">Tickrate Changer</a>
-                    <div class="desc">Change the speed that your game will run</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-image" style="background-image: url('assets/images/pvptime.png');">
-                    <a href="http://minecraft.curseforge.com/mc-mods/227151-pvptime"></a>
-                </div>
-                <div class="item-text">
-                    <a href="http://minecraft.curseforge.com/mc-mods/227151-pvptime">PvPTime</a>
-                    <div class="desc">Only enable PvP during the night</div>
-                </div>
+        <div class="page-container" id="main">
+            <div class="page">
+                <h1>Guilherme Chaguri</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about" class="page-link">About</a></li>
+                        <li><a href="#projects" class="page-link">Projects</a></li>
+                        <li><a href="https://github.com/Guichaguri" target="_blank">Github</a></li>
+                        <li><a href="https://twitter.com/Guichaguri" target="_blank">Twitter</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <h2 id="social">Social Media</h2>
-        <div class="social-buttons">
-            <a href="https://twitter.com/guichaguri">
-                <div class="icon">&#xf099;</div>
-                <div class="social-text">Twitter</div>
-            </a>
-            <a href="https://github.com/Guichaguri">
-                <div class="icon">&#xf09b;</div>
-                <div class="social-text">GitHub</div>
-            </a>
+        <div class="page-container" id="about">
+            <div class="page">
+                <h3>About</h3>
+                <div class="animate">
+                    <p>I'm Guilherme Chaguri, also known as Guichaguri. I'm still in college and programming is still a hobby.</p>
+                    <p>I code mostly in Java, Javascript and PHP. I'm a self-taught programmer</p>
+                    <p>That's it.</p>
+                </div>
+                <a href="#main" class="page-link back-button">&lsaquo; Back</a>
+            </div>
+        </div>
+        <div class="page-container" id="projects">
+            <div class="page">
+                <h3>Active Projects</h3>
+                <ul class="animate">
+                    <li>
+                        <a href="http://guichaguri.github.io/DiscordDJ/" target="_blank">DiscordDJ</a>
+                        <em>Music bot for Discord</em>
+                    </li>
+                    <li>
+                        <a href="http://guichaguri.github.io/BetterFps/" target="_blank">BetterFps</a>
+                        <em>Performance Improvements for Minecraft</em>
+                    </li>
+                    <li>
+                        <a href="http://guichaguri.github.io/TickrateChanger/" target="_blank">Tickrate Changer</a>
+                        <em>Change the speed that Minecraft will run</em>
+                    </li>
+                    <li>
+                        <a href="http://guichaguri.github.io/PvPTime/" target="_blank">PvPTime</a>
+                        <em>Only allow PvP in night time in Minecraft</em>
+                    </li>
+                </ul>
+                <a href="#main" class="page-link back-button">&lsaquo; Back</a>
+            </div>
         </div>
     </div>
-    <footer>
-        Developed by Guilherme Chaguri
-    </footer>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="assets/scripts.js" async></script>
+
+    <script type="text/javascript">
+        var hash = location.hash;
+        if(hash.length > 0) {
+            hash = hash.substring(0, 1) == '#' ? hash.substring(1) : hash;
+        } else {
+            hash = null;
+        }
+        var currentPage = document.getElementById(hash == null ? 'main' : hash);
+        if(currentPage == null) currentPage = document.getElementById('main');
+
+        function changePage(id) {
+            var page = document.getElementById(id);
+            if(page == null) return;
+
+            currentPage.classList.add('hide');
+            if(!page.classList.contains('hide')) page.classList.add('hide');
+
+            setTimeout(function() {
+                page.style.display = 'block';
+                var pages = document.getElementsByClassName('page-container');
+                for(var i = 0; i < pages.length; i++) {
+                    if(pages[i] != page) pages[i].style.display = 'none';
+                }
+                currentPage = page;
+                setTimeout(function() {
+                    page.classList.remove('hide');
+                    location.hash = id == 'main' ? '' : id;
+                }, 50);
+            }, 1150);
+        }
+
+        var clickEvent = function(event) {
+            var id = event.target.getAttribute('href').substring(1);
+            changePage(id);
+            event.preventDefault();
+        };
+
+        var links = document.getElementsByClassName('page-link');
+        for(var i = 0; i < links.length; i++) {
+            var link = links[i];
+            link.onclick = clickEvent;
+        }
+
+        var animateElems = document.getElementsByClassName('animate');
+        for(var i = 0; i < animateElems.length; i++) {
+            var children = animateElems[i].children;
+            var pct = Math.min(1 / children.length, 0.1);
+            for(var o = 0; o < children.length; o++) {
+                children[o].style.transitionDelay = (o * pct) + 's';
+            }
+        }
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-73372300-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>

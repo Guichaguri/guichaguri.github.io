@@ -1,1 +1,1 @@
-The code for a small website created by me (Guichaguri)
+The code for a small website.
