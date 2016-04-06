@@ -54,6 +54,7 @@
             margin: 0px;
             padding: 0px;
             min-height: 100vh;
+            box-sizing: border-box;
         }
         .page {
             position: absolute;
@@ -64,6 +65,7 @@
             font-size: 1.25em;
             font-weight: 400;
             color: #333333;
+            box-sizing: border-box;
         }
         h1 {
             font-family: 'Roboto', sans-serif;
@@ -75,7 +77,7 @@
             -webkit-text-fill-color: transparent;
             margin: 0.25em 0px;
             padding: 0px;
-
+            text-align: center;
             transition: transform 0.75s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.75s cubic-bezier(0.645, 0.045, 0.355, 1);
         }
         h3 {
@@ -99,6 +101,7 @@
         }
         p {
             font-weight: 300;
+            line-height: 1.5em;
             transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
         }
         #projects .page ul {
@@ -146,6 +149,11 @@
             transition: opacity 0.65s ease-in-out;
             transition-delay: 0.5s;
         }
+        .back-button:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
 
         .hide h1 {
             transform: scale(0.25);
@@ -164,7 +172,7 @@
             transform: translate(5%, 0);
         }
         #projects.hide ul li {
-            transform: translate(50%, 0);
+            transform: translate(25%, 0);
             opacity: 0;
         }
         .hide .back-button {
@@ -179,6 +187,47 @@
             to {
                 opacity: 1;
                 transform: translate(-50%, -50%);
+            }
+        }
+
+        .page.scroll {
+            position: static;
+            margin: 0px auto;
+            padding: 1em 0px;
+            height: 100%;
+            max-height: 100vh;
+            overflow-y: auto;
+            transform: none;
+        }
+
+        @media(max-width: 800px) {
+            .page {
+                min-width: 75%;
+            }
+            .page.scroll {
+                width: 75%;
+            }
+        }
+
+        @media(max-width: 600px) {
+            nav ul li {
+                display: block;
+                padding: 0.3em 0;
+            }
+            .page {
+                min-width: 80%;
+            }
+            .page.scroll {
+                width: 80%;
+            }
+        }
+
+        @media(max-width: 400px) {
+            .page {
+                min-width: 90%;
+            }
+            .page.scroll {
+                width: 90%;
             }
         }
     </style>
@@ -245,9 +294,37 @@
         var currentPage = document.getElementById(hash == null ? 'main' : hash);
         if(currentPage == null) currentPage = document.getElementById('main');
 
+        window.onhashchange = function(e) {
+            var hash = location.hash;
+            if(hash.length > 0) {
+                hash = hash.substring(0, 1) == '#' ? hash.substring(1) : hash;
+            } else {
+                hash = 'main';
+            }
+            changePage(hash);
+        };
+
+        window.onresize = function(e) {
+            checkSize();
+        };
+
+        function checkSize() {
+            var pages = document.getElementsByClassName('page');
+            for(var i = 0; i < pages.length; i++) {
+                console.log(pages[i].offsetHeight + ' - ' + window.innerHeight);
+                if(pages[i].offsetHeight >= window.innerHeight) {
+                    if(!pages[i].classList.contains('scroll')) pages[i].classList.add('scroll');
+                } else {
+                    pages[i].classList.remove('scroll');
+                }
+            }
+        }
+
         function changePage(id) {
             var page = document.getElementById(id);
             if(page == null) return;
+
+            checkSize();
 
             currentPage.classList.add('hide');
             if(!page.classList.contains('hide')) page.classList.add('hide');
@@ -286,14 +363,16 @@
                 children[o].style.transitionDelay = (o * pct) + 's';
             }
         }
+
+        checkSize();
     </script>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        /*(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-73372300-1', 'auto');
-        ga('send', 'pageview');
+        ga('send', 'pageview');*/
     </script>
 </body>
 </html>
