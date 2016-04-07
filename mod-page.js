@@ -69,6 +69,19 @@ if(curseUrl !== undefined && curseUrl != null) {
 
 }
 
+function checkSize() {
+    var content = document.getElementById('content');
+    if(content.offsetHeight >= window.innerHeight) {
+        if(!content.classList.contains('scroll')) content.classList.add('scroll');
+    } else {
+        content.classList.remove('scroll');
+    }
+}
+
+window.onresize = checkSize;
+window.onload = checkSize;
+checkSize();
+
 // Analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

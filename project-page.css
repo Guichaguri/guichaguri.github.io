@@ -21,6 +21,7 @@ body {
     font-weight: 400;
     color: #ffffff;
     animation: fadeInDown 1.5s;
+    box-sizing: border-box;
 }
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -94,6 +95,14 @@ select option {
     display: none;
 }
 
+#content.scroll {
+    position: static;
+    margin: 0px auto;
+    padding: 1em 0px;
+    transform: none;
+    animation: none;
+}
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -115,5 +124,43 @@ select option {
         opacity: 1;
         transform: scale(1);
         max-height: 65px;
+    }
+}
+
+@media(max-width: 800px) {
+    #content {
+        min-width: 75%;
+    }
+    #content.scroll {
+        width: 75%;
+    }
+}
+
+@media(max-width: 600px) {
+    #content {
+        min-width: 80%;
+    }
+    #content.scroll {
+        width: 80%;
+    }
+    .w50 {
+        width: 100%;
+        float: none;
+    }
+    .w50clear {
+        display: none !important;
+        clear: none;
+    }
+    nav ul li {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    #content {
+        min-width: 90%;
+    }
+    #content.scroll {
+        width: 90%;
     }
 }
