@@ -26,7 +26,7 @@
     <meta name="distribution" content="Global" />
     <meta name="robots" content="all" />
     <meta name="url" content="http://guichaguri.github.io/" />
-    <meta name="revisit-after" content="2 weeks" />
+    <meta name="revisit-after" content="5 weeks" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta property="og:title" content="Guilherme Chaguri" />
@@ -80,7 +80,7 @@
             margin: 0.25em 0px;
             padding: 0px;
             text-align: center;
-            transition: transform 0.75s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.75s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
         }
         h3 {
             font-family: 'Roboto', sans-serif;
@@ -89,8 +89,7 @@
             color: #333333;
             margin: 0.25em 0px;
             padding: 0px;
-
-            transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
         }
         a {
             font-weight: 400;
@@ -104,7 +103,7 @@
         p {
             font-weight: 300;
             line-height: 1.5em;
-            transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
         }
         #projects .page ul {
             padding-left: 1em;
@@ -312,7 +311,6 @@
         function checkSize() {
             var pages = document.getElementsByClassName('page');
             for(var i = 0; i < pages.length; i++) {
-                console.log(pages[i].offsetHeight + ' - ' + window.innerHeight);
                 if(pages[i].offsetHeight >= window.innerHeight) {
                     if(!pages[i].classList.contains('scroll')) pages[i].classList.add('scroll');
                 } else {
@@ -341,7 +339,7 @@
                     page.classList.remove('hide');
                     location.hash = id == 'main' ? '' : id;
                 }, 50);
-            }, 1150);
+            }, 500);
         }
 
         var clickEvent = function(event) {
