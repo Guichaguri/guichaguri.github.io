@@ -127,8 +127,8 @@
             color: #26c2f3;
         }
         nav {
-            transition: all 0.65s cubic-bezier(0.645, 0.045, 0.355, 1);
-            transition-delay: 0.5s;
+            transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition-delay: 0.25s;
         }
         nav ul, nav ul li {
             list-style: none;
@@ -194,7 +194,7 @@
         .page.scroll {
             position: static;
             margin: 0px auto;
-            padding: 1em 0px;
+            padding: 1em;
             height: 100%;
             max-height: 100vh;
             overflow-y: auto;
@@ -263,7 +263,7 @@
         <div class="page-container" id="projects">
             <div class="page">
                 <h3>Active Projects</h3>
-                <p>My active projects change whenever my interests change. They go from React Native packages to Minecraft mods</p>
+                <p>My projects are an "excuse" to learn something new or to innovate. They go from React Native packages to Minecraft mods</p>
                 <p>Here are some of them:</p>
                 <ul class="animate">
                     <li>
@@ -339,7 +339,7 @@
                     page.classList.remove('hide');
                     location.hash = id == 'main' ? '' : id;
                 }, 50);
-            }, 500);
+            }, 600);
         }
 
         var clickEvent = function(event) {
