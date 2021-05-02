@@ -1,378 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Guilherme Chaguri</title>
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <meta name="theme-color" content="#3a8dfe">
-    <meta name="msapplication-navbutton-color" content="#3a8dfe">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#3a8dfe">
-    <link rel="alternate" href="http://guichaguri.github.io/" hreflang="en" />
-    <link rel="canonical" href="http://guichaguri.github.io/" />
-    <link rel="publisher" href="https://plus.google.com/+GuiChaguri" />
-    <meta name="google-site-verification" content="rV_BZpKiHVJGRCvmTph1XDr6HCDSOjrMwMPw85RfiIY">
+    <head>
+        <meta charset="UTF-8">
+        <title>Guilherme Chaguri</title>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="classification" content="guichaguri,guilherme chaguri,java,php,nodejs" />
-    <meta name="title" content="Guilherme Chaguri" />
-    <meta name="description" content="The developer of DiscordDJ, BetterFps and other projects. Self-taught programmer that works with Java, PHP and NodeJS" />
-    <meta name="keywords" content="Java Developer, PHP Developer, DiscordDJ, BetterFps, Tickrate Changer, Web Developer, Guilherme Chaguri, Guichaguri" />
-    <meta name="subject" content="Java Developer, PHP Developer, DiscordDJ, BetterFps, Tickrate Changer, Web Developer, Guilherme Chaguri, Guichaguri" />
-    <meta name="author" content="Guilherme Chaguri" />
-    <meta name="rating" content="general" />
-    <meta name="Googlebot" content="all" />
-    <meta name="language" content="english" />
-    <meta name="distribution" content="Global" />
-    <meta name="robots" content="all" />
-    <meta name="url" content="http://guichaguri.github.io/" />
-    <meta name="revisit-after" content="5 weeks" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="Guilherme Chaguri" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://guichaguri.github.io/" />
-    <meta property="og:description" content="The developer of DiscordDJ, BetterFps and other projects. Self-taught programmer that works with Java, PHP and NodeJS" />
-    <meta property="og:site_name" content="Guichaguri" />
+        <meta name="theme-color" content="#12151a">
+        <meta name="msapplication-navbutton-color" content="#12151a">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#12151a">
 
-    <style type="text/css">
-        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic,300,100');
-        body, html {
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        body {
-            background: url('background.png') fixed;
-            background-size: cover;
-            font-family: 'Roboto', sans-serif;
-        }
-        .page-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            margin: 0px;
-            padding: 0px;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-        .page {
-            position: absolute;
-            top: 49%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.25em;
-            font-weight: 400;
-            color: #333333;
-            box-sizing: border-box;
-        }
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 3em;
-            font-weight: 300;
-            color: #3a8dfe;
-            background-image: -webkit-linear-gradient(92deg, #26c2f3, #3a8dfe);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0.25em 0px;
-            padding: 0px;
-            text-align: center;
-            transition: transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-        }
-        h3 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 3em;
-            font-weight: 300;
-            color: #333333;
-            margin: 0.25em 0px;
-            padding: 0px;
-            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        }
-        a {
-            font-weight: 400;
-            color: #888888;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #555555;
-            text-decoration: none;
-        }
-        p {
-            font-weight: 300;
-            line-height: 1.5em;
-            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        }
-        #projects .page ul {
-            padding-left: 1em;
-            color: #676767;
-        }
-        #projects .page ul li {
-            margin: 0.5em 0px;
-            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        }
-        #projects .page ul li em {
-            color: #888888;
-            font-size: 0.75em;
-            font-style: normal;
-        }
-        #projects .page ul li a {
-            color: #676767;
-            font-weight: 700;
-            display: block;
-        }
-        #projects .page ul li a:hover {
-            color: #26c2f3;
-        }
-        nav {
-            transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-            transition-delay: 0.25s;
-        }
-        nav ul, nav ul li {
-            list-style: none;
-            margin: 0px;
-            padding: 0px;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline-block;
-            padding: 0.1em 0.3em;
-        }
+        <link rel="alternate" href="https://guichaguri.com/" hreflang="en" />
+        <link rel="canonical" href="https://guichaguri.com/" />
 
-        #main .page {
-            animation: fadeInDown 1.5s;
-        }
-        .back-button {
-            font-weight: 300;
-            float: right;
-            transition: opacity 0.65s ease-in-out;
-            transition-delay: 0.5s;
-        }
-        .back-button:after {
-            content: '';
-            display: block;
-            clear: both;
-        }
+        <meta name="google-site-verification" content="rV_BZpKiHVJGRCvmTph1XDr6HCDSOjrMwMPw85RfiIY">
 
-        .hide h1 {
-            transform: scale(0.25);
-            opacity: 0;
-        }
-        .hide h3 {
-            transform: translate(0, -50%);
-            opacity: 0;
-        }
-        .hide nav {
-            transform: translate(0, 50%);
-            opacity: 0;
-        }
-        .hide p {
-            opacity: 0;
-            transform: translate(5%, 0);
-        }
-        #projects.hide ul li {
-            transform: translate(25%, 0);
-            opacity: 0;
-        }
-        .hide .back-button {
-            opacity: 0;
-        }
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translate(-50%, -100%);
+        <meta name="classification" content="guichaguri,guilherme chaguri" />
+        <meta name="title" content="Guilherme Chaguri" />
+        <meta name="description" content="Self-taught software developer, open source lover." />
+        <meta name="keywords" content="Guilherme Chaguri, Guichaguri, Open Source" />
+        <meta name="subject" content="Guilherme Chaguri, Guichaguri, Open Source" />
+        <meta name="author" content="Guilherme Chaguri" />
+
+        <meta name="rating" content="general" />
+        <meta name="Googlebot" content="all" />
+        <meta name="language" content="english" />
+        <meta name="distribution" content="Global" />
+        <meta name="robots" content="all" />
+        <meta name="url" content="https://guichaguri.com/" />
+        <meta name="revisit-after" content="5 weeks" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="Guilherme Chaguri" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://guichaguri.com/" />
+        <meta property="og:description" content="Self-taught software developer, open source lover." />
+        <meta property="og:site_name" content="Guichaguri" />
+
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
             }
-            to {
-                opacity: 1;
-                transform: translate(-50%, -50%);
+            body, html {
+                margin: 0;
+                padding: 0;
+                background: #12151a;
+                font-family: 'Jost', Roboto, sans-serif;
             }
-        }
+            body {
+                padding: 1em;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                box-shadow: inset 0 0 50vw rgba(0, 0, 0, 0.25);
+            }
+            main {
+                text-align: center;
+                user-select: none;
+                padding: 1em;
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+                color: #00adb5;
+                font-weight: 600;
+                font-size: 4em;
+                line-height: 1em;
 
-        .page.scroll {
-            position: static;
-            margin: 0px auto;
-            padding: 1em;
-            height: 100%;
-            max-height: 100vh;
-            overflow-y: auto;
-            transform: none;
-            animation: none;
-        }
-
-        @media(max-width: 800px) {
-            .page {
-                min-width: 75%;
+                text-shadow: 0 0.06em 0 rgba(0, 173, 181, 0.5),
+                            0 0.12em 0 rgba(0, 173, 181, 0.25),
+                            0 0.12em 0.1em rgba(0, 0, 0, 0.5);
+                transform: translate(0, -0.12em);
+                transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
             }
-            .page.scroll {
-                width: 75%;
+            #description, #icons a {
+                color: #393e46;
+                font-weight: 400;
+                fill: currentColor;
             }
-        }
-
-        @media(max-width: 600px) {
-            nav ul li {
-                display: block;
-                padding: 0.3em 0;
+            #description, #icons {
+                margin: 0.5em 0;
             }
-            .page {
-                min-width: 80%;
+            #icons a {
+                display: inline-block;
+                padding: 0.25em;
             }
-            .page.scroll {
-                width: 80%;
+            #icons a:hover {
+                color: #fff;
             }
-        }
-
-        @media(max-width: 400px) {
-            .page {
-                min-width: 90%;
+            #icons a svg {
+                width: 1.5em;
+                height: 1.5em;
             }
-            .page.scroll {
-                width: 90%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div id="content">
-        <div class="page-container" id="main">
-            <div class="page">
-                <h1>Guilherme Chaguri</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#about" class="page-link">About</a></li>
-                        <li><a href="#projects" class="page-link">Projects</a></li>
-                        <li><a href="https://github.com/Guichaguri" target="_blank">Github</a></li>
-                        <li><a href="https://twitter.com/Guichaguri" target="_blank">Twitter</a></li>
-                    </ul>
-                </nav>
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Guilherme Chaguri</h1>
+            <div id="description">self-taught software developer, open-source lover.</div>
+            <div id="icons">
+                <a href="https://github.com/Guichaguri" target="_blank" title="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/guilherme-chaguri/" target="_blank" title="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" /></svg>
+                </a>
             </div>
-        </div>
-        <div class="page-container" id="about">
-            <div class="page">
-                <h3>About</h3>
-                <div class="animate">
-                    <p>I'm Guilherme Chaguri, also known as Guichaguri. I'm a self-taught programmer in high school that wants to do computer science, and for now, programming is still a hobby.</p>
-                    <p>I code mostly in Java, Javascript and PHP, with a passion for learning new technologies.</p>
-                    <p>That's it.</p>
-                </div>
-                <a href="#main" class="page-link back-button">&lsaquo; Back</a>
-            </div>
-        </div>
-        <div class="page-container" id="projects">
-            <div class="page">
-                <h3>Active Projects</h3>
-                <p>They're my hobby. They go from React Native packages to Minecraft mods</p>
-                <p>Here are some of them:</p>
-                <ul class="animate">
-                    <li>
-                        <a href="http://guichaguri.github.io/DiscordDJ/" target="_blank">DiscordDJ</a>
-                        <em>Music bot for Discord inspired by PlugDJ</em>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Guichaguri/react-native-track-player" target="_blank">react-native-track-player</a>
-                        <em>A React Native module that supports as a bunch of music player features, metadata, media buttons and Chromecast</em>
-                    </li>
-                    <li>
-                        <a href="http://guichaguri.github.io/BetterFps/" target="_blank">BetterFps</a>
-                        <em>Performance Improvements for Minecraft</em>
-                    </li>
-                </ul>
-                <a href="https://github.com/Guichaguri?tab=repositories" target="_blank">There are more of them on GitHub</a>
-                <a href="#main" class="page-link back-button">&lsaquo; Back</a>
-            </div>
-        </div>
-    </div>
+        </main>
 
-    <script type="text/javascript">
-        var hash = location.hash;
-        if(hash.length > 0) {
-            hash = hash.substring(0, 1) == '#' ? hash.substring(1) : hash;
-        } else {
-            hash = null;
-        }
-        var currentPage = document.getElementById(hash == null ? 'main' : hash);
-        if(currentPage == null) currentPage = document.getElementById('main');
+        <script type="text/javascript">
+            const h1 = document.querySelector('h1');
 
-        window.onhashchange = function(e) {
-            var hash = location.hash;
-            if(hash.length > 0) {
-                hash = hash.substring(0, 1) == '#' ? hash.substring(1) : hash;
-            } else {
-                hash = 'main';
+            function updateTitle(e) {
+                let x = e.clientX / window.innerWidth - 0.5;
+                let y = e.clientY / window.innerHeight - 0.5;
+                let dist = Math.sqrt(x ** 2 + y ** 2);
+
+                x = x / dist * 0.06;
+                y = y / dist * 0.06;
+                
+                h1.style.textShadow = `${x}em ${y}em 0 rgba(0, 173, 181, 0.5),` +
+                                    `${x * 2}em ${y * 2}em 0 rgba(0, 173, 181, 0.25),` +
+                                    `${x * 2}em ${y * 2}em 0.1em rgba(0, 0, 0, 0.5)`;
+                h1.style.transform = `translate(${-x * 2}em, ${-y * 2}em)`
             }
-            changePage(hash);
-        };
 
-        window.onresize = function(e) {
-            checkSize();
-        };
-
-        function checkSize() {
-            var pages = document.getElementsByClassName('page');
-            for(var i = 0; i < pages.length; i++) {
-                if(pages[i].offsetHeight >= window.innerHeight) {
-                    if(!pages[i].classList.contains('scroll')) pages[i].classList.add('scroll');
-                } else {
-                    pages[i].classList.remove('scroll');
-                }
-            }
-        }
-
-        function changePage(id) {
-            var page = document.getElementById(id);
-            if(page == null) return;
-
-            checkSize();
-
-            currentPage.classList.add('hide');
-            if(!page.classList.contains('hide')) page.classList.add('hide');
-
-            setTimeout(function() {
-                page.style.display = 'block';
-                var pages = document.getElementsByClassName('page-container');
-                for(var i = 0; i < pages.length; i++) {
-                    if(pages[i] != page) pages[i].style.display = 'none';
-                }
-                currentPage = page;
-                setTimeout(function() {
-                    page.classList.remove('hide');
-                    location.hash = id == 'main' ? '' : id;
-                }, 50);
-            }, 600);
-        }
-
-        var clickEvent = function(event) {
-            var id = event.target.getAttribute('href').substring(1);
-            changePage(id);
-            event.preventDefault();
-        };
-
-        var links = document.getElementsByClassName('page-link');
-        for(var i = 0; i < links.length; i++) {
-            var link = links[i];
-            link.onclick = clickEvent;
-        }
-
-        var animateElems = document.getElementsByClassName('animate');
-        for(var i = 0; i < animateElems.length; i++) {
-            var children = animateElems[i].children;
-            var pct = Math.min(1 / children.length, 0.1);
-            for(var o = 0; o < children.length; o++) {
-                children[o].style.transitionDelay = (o * pct) + 's';
-            }
-        }
-
-        checkSize();
-    </script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-73372300-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-</body>
+            document.addEventListener('touchmove', updateTitle);
+            document.addEventListener('mousemove', updateTitle);
+        </script>
+    </body>
 </html>
