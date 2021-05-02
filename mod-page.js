@@ -64,7 +64,7 @@ if(curseUrl !== undefined && curseUrl != null) {
             }
         }
     };
-    xhttp.open('GET', 'https://cors-proxy.htmldriven.com/?url=' + encodeURIComponent('https://api.cfwidget.com/' + curseUrl), true);
+    xhttp.open('GET', 'https://cors.bridged.cc/' + encodeURIComponent('https://api.cfwidget.com/' + curseUrl), true);
     xhttp.send();
 
 }
