@@ -64,7 +64,7 @@ if(curseUrl !== undefined && curseUrl != null) {
             }
         }
     };
-    xhttp.open('GET', 'http://widget.mcf.li/' + curseUrl + '.json', true);
+    xhttp.open('GET', 'https://cors-proxy.htmldriven.com/?url=' + encodeURIComponent('https://api.cfwidget.com/' + curseUrl), true);
     xhttp.send();
 
 }
